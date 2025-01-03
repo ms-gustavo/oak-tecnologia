@@ -1,50 +1,60 @@
-# React + TypeScript + Vite
+<header>
+  <h1>Projeto de Cadastro e Listagem de Produtos</h1>
+</header>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<section>
+  <h2>Descrição do Projeto</h2>
+  <div class="content">
+    <p>Este é um projeto de cadastro e listagem de produtos desenvolvido como parte do processo seletivo para a vaga de estágio em desenvolvimento na <strong>Oak Tecnologia</strong>. O projeto utiliza as seguintes tecnologias:</p>
+    <ul>
+      <li><strong>React</strong> com <strong>Vite</strong></li>
+      <li><strong>Typescript</strong></li>
+      <li><strong>Styled Components</strong></li>
+      <li><strong>React Hook Form</strong></li>
+    </ul>
+  </div>
+</section>
 
-Currently, two official plugins are available:
+<section>
+  <h2>Funcionalidades</h2>
+  <div class="content">
+    <h3>Cadastro</h3>
+    <p>O formulário de cadastro possui os seguintes campos:</p>
+    <ul>
+      <li><strong>Nome do Produto:</strong> campo de texto</li>
+      <li><strong>Descrição do Produto:</strong> campo de texto</li>
+      <li><strong>Valor do Produto:</strong> campo de valor</li>
+      <li><strong>Disponível para Venda:</strong> campo com 2 opções: <em>sim</em> / <em>não</em></li>
+    </ul>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   <h3>Listagem</h3>
+    <p>A listagem exibe as seguintes colunas:</p>
+    <ul>
+      <li><strong>Nome</strong> do produto</li>
+      <li><strong>Valor</strong> do produto</li>
+    </ul>
+    <p>A listagem é ordenada automaticamente pelo valor do produto do menor para o maior.</p>
 
-## Expanding the ESLint configuration
+   <h3>Cadastro e Atualização da Listagem</h3>
+    <p>Após cadastrar um novo produto, a listagem será automaticamente atualizada e exibida.</p>
+    
+   <h3>Botão para Cadastro</h3>
+    <p>Na listagem, existe um botão para cadastrar um novo produto.</p>
+  </div>
+</section>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+<section>
+  <h2>Como Executar o Projeto</h2>
+  <div class="content">
+    <p>Para rodar este projeto em seu ambiente local, siga os seguintes passos:</p>
+    <ol>
+      <li>Clone o repositório:</li>
+      <pre><code>git clone https://github.com/ms-gustavo/oak-tecnologia.git</code></pre>
+      <li>Instale as dependências:</li>
+      <pre><code>npm install</code></pre>
+      <li>Inicie o servidor de desenvolvimento:</li>
+      <pre><code>npm run dev</code></pre>
+      <li>Acesse a aplicação no navegador em <strong>http://localhost:5173</strong></li>
+    </ol>
+  </div>
+</section>
